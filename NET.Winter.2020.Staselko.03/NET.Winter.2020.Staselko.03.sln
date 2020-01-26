@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewtonMethod", "NewtonMetho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumbersExtension.Test", "NumbersExtension.Test\NumbersExtension.Test.csproj", "{F446154F-D556-485F-AF5B-F99BA07F49C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterArray", "FilterArray\FilterArray.csproj", "{93F51CAB-D4BD-404D-9723-B834A143A3C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterArray", "FilterArray\FilterArray.csproj", "{93F51CAB-D4BD-404D-9723-B834A143A3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExtension.Tests", "ArrayExtension.Tests\ArrayExtension.Tests.csproj", "{37387654-AABB-4FCF-9D88-5A71767E7AAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExtension.Tests", "ArrayExtension.Tests\ArrayExtension.Tests.csproj", "{37387654-AABB-4FCF-9D88-5A71767E7AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindGcd", "FindGcd\FindGcd.csproj", "{81C00644-1639-471C-8E8E-9523AFF4BDF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerExtensions.Tests", "IntegerExtensions.Tests\IntegerExtensions.Tests.csproj", "{6C51CBAE-E2EF-4197-9986-97996F568E7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C00644-1639-471C-8E8E-9523AFF4BDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C00644-1639-471C-8E8E-9523AFF4BDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C00644-1639-471C-8E8E-9523AFF4BDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C00644-1639-471C-8E8E-9523AFF4BDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C51CBAE-E2EF-4197-9986-97996F568E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C51CBAE-E2EF-4197-9986-97996F568E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C51CBAE-E2EF-4197-9986-97996F568E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C51CBAE-E2EF-4197-9986-97996F568E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
