@@ -7,7 +7,10 @@ namespace NewtonMethod
     /// </summary>
     public static class NumbersExtension
     {
-        private const int Epsilon = 1;
+        /// <summary>
+        /// accuracy (] 0; epsilon [).
+        /// </summary>
+        public const int Epsilon = 1;
 
         /// <summary>
         /// Implement an algorithm that allows you to calculate the root
