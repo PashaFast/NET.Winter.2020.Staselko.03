@@ -55,14 +55,8 @@ namespace NewtonMethod
             return x1;
         }
 
-        private static double FunctionValueAtPoint(double number, int power, double x)
-        {
-            return Math.Pow(x, power) - number;
-        }
+        private static double FunctionValueAtPoint(double number, int power, double x) => Math.Pow(x, power) - number;
 
-        private static double DerivativeFunctionAtPoint(int power, double x)
-        {
-            return power * Math.Pow(x, power - 1);
-        }
+        private static double DerivativeFunctionAtPoint(int power, double x) => power * Math.Pow(x, power - 1);
     }
 }

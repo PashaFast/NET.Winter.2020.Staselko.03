@@ -14,9 +14,6 @@ namespace NumbersExtension.Test
         [TestCase(0.0081, 4, 0.1, 0.3)]
         [TestCase(-0.008, 3, 0.1, -0.2)]
         [TestCase(0.004241979, 9, 0.00000001, 0.545)]
-        
-
-
         public void FindNthRoot_WithPossitivePowers_ExpectedResults(double number, int power, double accuracy,double expected)
         {
             Assert.AreEqual(expected, NewtonMethod.NumbersExtension.FindNthRoot(number, power, accuracy),accuracy);

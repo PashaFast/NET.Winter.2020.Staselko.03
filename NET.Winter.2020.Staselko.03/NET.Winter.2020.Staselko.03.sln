@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonMethod", "NewtonMethod\NewtonMethod.csproj", "{904AFFD9-D8F9-4C3C-A170-3D3210C32420}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewtonMethod", "NewtonMethod\NewtonMethod.csproj", "{904AFFD9-D8F9-4C3C-A170-3D3210C32420}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersExtension.Test", "NumbersExtension.Test\NumbersExtension.Test.csproj", "{F446154F-D556-485F-AF5B-F99BA07F49C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumbersExtension.Test", "NumbersExtension.Test\NumbersExtension.Test.csproj", "{F446154F-D556-485F-AF5B-F99BA07F49C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterArray", "FilterArray\FilterArray.csproj", "{93F51CAB-D4BD-404D-9723-B834A143A3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExtension.Tests", "ArrayExtension.Tests\ArrayExtension.Tests.csproj", "{37387654-AABB-4FCF-9D88-5A71767E7AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{F446154F-D556-485F-AF5B-F99BA07F49C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F446154F-D556-485F-AF5B-F99BA07F49C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F446154F-D556-485F-AF5B-F99BA07F49C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F51CAB-D4BD-404D-9723-B834A143A3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F51CAB-D4BD-404D-9723-B834A143A3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F51CAB-D4BD-404D-9723-B834A143A3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F51CAB-D4BD-404D-9723-B834A143A3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37387654-AABB-4FCF-9D88-5A71767E7AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
