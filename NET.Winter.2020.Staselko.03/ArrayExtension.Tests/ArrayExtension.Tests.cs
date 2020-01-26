@@ -1,11 +1,9 @@
 using NUnit.Framework;
-using FilterArray;
 using System;
 using System.Linq;
 
 namespace ArrayExtension.Tests
 {
-   
     public class ArrayExtensionTests
     {
         [TestCase(new[] { 2212332, 1405644, 1236674 }, 0, new[] { 1405644 })]
@@ -36,15 +34,9 @@ namespace ArrayExtension.Tests
         [Test]
         public void FilterArrayByKey_BigArray_Somethig()
         {
-
-            Func<int,bool> retFunc = FilterArray.ArrayExtension.IsOnePresent;
-
-            int[] source = Enumerable.Range(0, 100_000_000).ToArray();
-            int[] temp = Enumerable.Where(Enumerable.Range(0, 100_000_000), retFunc).ToArray();
-            int[] act = FilterArray.ArrayExtension.FilterArrayByKey(source,1);
-            
-            Assert.AreEqual(temp, act);
+            int[] source = Enumerable.Repeat(145, 100_000_000).ToArray();
+            int[] act = FilterArray.ArrayExtension.FilterArrayByKey(source, 1);
+            Assert.AreEqual(source, act);
         }
-
     }
 }

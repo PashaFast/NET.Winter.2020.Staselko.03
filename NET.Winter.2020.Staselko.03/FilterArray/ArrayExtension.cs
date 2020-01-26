@@ -68,20 +68,5 @@ namespace FilterArray
 
             return x > 0;
         }
-
-        public static bool IsOnePresent(int x)
-        {
-            while (x > 0)
-            {
-                if (x % 10 == 1)
-                {
-                    break;
-                }
-
-                x /= 10;
-            }
-
-            return x > 0;
-        }
     }
 }
