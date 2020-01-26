@@ -36,10 +36,14 @@ namespace ArrayExtension.Tests
         [Test]
         public void FilterArrayByKey_BigArray_Somethig()
         {
-            int[] source = Enumerable.Range(0, 100).ToArray();
+
+            Func<int,bool> retFunc = FilterArray.ArrayExtension.IsOnePresent;
+
+            int[] source = Enumerable.Range(0, 100_000_000).ToArray();
+            int[] temp = Enumerable.Where(Enumerable.Range(0, 100_000_000), retFunc).ToArray();
             int[] act = FilterArray.ArrayExtension.FilterArrayByKey(source,1);
-            int[] expected = new int[] { 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 31, 41, 51, 61, 71, 81, 91 };
-            Assert.AreEqual(expected, act);
+            
+            Assert.AreEqual(temp, act);
         }
 
     }
