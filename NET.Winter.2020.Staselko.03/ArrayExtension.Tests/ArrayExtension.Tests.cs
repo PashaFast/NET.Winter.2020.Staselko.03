@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Linq;
+using static FilterArray.ArrayExtension;
 
 namespace ArrayExtension.Tests
 {
@@ -13,29 +14,29 @@ namespace ArrayExtension.Tests
 
         public void FilterArrayByKey_WithPossitivePowers_ExpectedResults(int[] array, int digit, int[] expected)
         {
-            Assert.AreEqual(expected, FilterArray.ArrayExtension.FilterArrayByKey(array,digit));
+            Assert.AreEqual(expected, FilterArrayByKey(array,digit));
         }
 
         [Test]
         public void FilterArrayByKey_WithEmptyArray_ArgumentException() =>
-           Assert.Throws<ArgumentException>(() => FilterArray.ArrayExtension.FilterArrayByKey(new int[0], 0),
+           Assert.Throws<ArgumentException>(() => FilterArrayByKey(new int[0], 0),
                message: "Array cannot be empty!");
 
         [Test]
         public void FilterArrayByKey_WithNullArray_ArgumentNullException() =>
-          Assert.Throws<ArgumentNullException>(() => FilterArray.ArrayExtension.FilterArrayByKey(null, 0),
+          Assert.Throws<ArgumentNullException>(() => FilterArrayByKey(null, 0),
               message: "Array cannot be null");
 
         [Test]
         public void FilterArrayByKey_WithNegativeDigit_ArgumentOutOfRangeException() =>
-         Assert.Throws<ArgumentOutOfRangeException>(() => FilterArray.ArrayExtension.FilterArrayByKey(new int[] { 1, 2 }, -1),
+         Assert.Throws<ArgumentOutOfRangeException>(() => FilterArrayByKey(new int[] { 1, 2 }, -1),
              message: "Digit cannot be negative");
 
         [Test]
         public void FilterArrayByKey_BigArray_Somethig()
         {
             int[] source = Enumerable.Repeat(145, 100_000_000).ToArray();
-            int[] act = FilterArray.ArrayExtension.FilterArrayByKey(source, 1);
+            int[] act = FilterArrayByKey(source, 1);
             Assert.AreEqual(source, act);
         }
     }

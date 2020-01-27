@@ -7,10 +7,16 @@ namespace NewtonMethod
     /// </summary>
     public static class NumbersExtension
     {
-        /// <summary>
-        /// accuracy (] 0; epsilon [).
-        /// </summary>
-        public const int Epsilon = 1;
+        public static readonly AppSettings AppSettings;
+
+        static NumbersExtension()
+        {
+            AppSettings = new AppSettings
+            {
+                Epsilon = double.Epsilon,
+                BitsInByte = 8,
+            };
+        }
 
         /// <summary>
         /// Implement an algorithm that allows you to calculate the root
@@ -40,7 +46,7 @@ namespace NewtonMethod
                 throw new ArgumentException("it is impossible to extract an even power root from a negative number.");
             }
 
-            if (accuracy > Epsilon)
+            if (accuracy > AppSettings.Epsilon)
             {
                 throw new ArgumentException("accuracy cannot be more than epsilon");
             }

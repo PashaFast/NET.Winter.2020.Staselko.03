@@ -44,29 +44,22 @@ namespace FilterArray
                 }
             }
 
-            if (numbers.Count == 0)
-            {
-                return Array.Empty<int>();
-            }
-            else
-            {
-                return numbers.ToArray();
-            }
+            return numbers.ToArray();
         }
 
-        private static bool IsDigitPresent(int x, int d)
+        private static bool IsDigitPresent(int number, int digit)
         {
-            while (x > 0)
+            while (number > 0)
             {
-                if (x % 10 == d)
+                if (number % 10 == digit)
                 {
-                    break;
+                    return true;
                 }
 
-                x /= 10;
+                number /= 10;
             }
 
-            return x > 0;
+            return false;
         }
     }
 }
