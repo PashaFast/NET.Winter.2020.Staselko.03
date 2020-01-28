@@ -16,4 +16,10 @@
     <ProjectReference Include="..\FilterArray\FilterArray.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="ArrayCreation">
+      <HintPath>..\..\..\NET.Winter.2020.Staselko.04\ArrayCreation\bin\Debug\netcoreapp3.1\ArrayCreation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

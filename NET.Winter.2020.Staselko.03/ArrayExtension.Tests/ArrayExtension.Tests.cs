@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Linq;
 using static FilterArray.ArrayExtension;
+using static ArrayCreation.ArrayGenerator;
 
 namespace ArrayExtension.Tests
 {
@@ -32,12 +33,17 @@ namespace ArrayExtension.Tests
          Assert.Throws<ArgumentOutOfRangeException>(() => FilterArrayByKey(new int[] { 1, 2 }, -1),
              message: "Digit cannot be negative");
 
-        [Test]
-        public void FilterArrayByKey_BigArray_Somethig()
+        [TestCase(4)]
+        public void FilterArrayByKey_BigArray_Somethig(int key)
         {
-            int[] source = Enumerable.Repeat(145, 100_000_000).ToArray();
-            int[] act = FilterArrayByKey(source, 1);
-            Assert.AreEqual(source, act);
+            //int[] source = Enumerable.Repeat(145, 100_000_000).ToArray();
+            //int[] act = FilterArrayByKey(source, 1);
+            //Assert.AreEqual(source, act);
+            int[] source = GetArrayWithDigit(100_000_000, key);
+            int[] act = FilterArrayByKey(source, key);
+            Assert.AreEqual(source, act); 
+            
+            
         }
     }
 }
